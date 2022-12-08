@@ -4,6 +4,11 @@
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header {
     background-color: #A8DE7E;
     height: 130px;
@@ -101,6 +106,8 @@ aside {
     height: 35px;
     margin-top: 10px;
     margin-left: 27px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 footer {
