@@ -5,23 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
+	<link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_arranjos.css">
+    <link rel="icon" href="img/icones_logos/logo.png">
+	<link rel="stylesheet" href="./css/style_formulario.css">
+	<link rel="stylesheet" href="reset.css">
 </head>
 	<body>
 		<header>
-			
-				<h1><img src="./Imagens/definitivo-logo 1.png" alt="logo_plantec"></h1>
-
+			<div class="cabeça">
+				<img class="logo" src="./img/icones_logos/logo.png">
 				<nav>
-					<ul>
-					    <li><img src="./Imagens/Wthatssaap.png">Atendimento</li>
-                        <li><img src="./Imagens/Login.png">Bem-vindo</li>
-                        <li><img src="./Imagens/cesta.png">Minha cesta</li>
+					<ul class="navegacao">
+						<li class="itenslista"><a href="index.html">Home</a></li>
+						<li class="itenslista"><a href="produtos.html">Produtos</a></li>
+						<li class="itenslista"><a href="contato.html">Contato</a></li>
 					</ul>
 				</nav>
-			
+			</div>
 		</header>
 		<main>
-			<form>
+			<aside>
+				<a href="index.html"><p class="botaovoltar">Voltar</p></a>
+				<H1 id="titulopagina">Fale Conosco</H1>
+			</aside>
+			<form  class="contato">
 				<label for="nomesobrenome">Nome e sobrenome</label>
 				<input type="text" id="nomesobrenome" class="input-padrao" required >
 
@@ -57,35 +65,38 @@
 				<input type="submit" value="Enviar formulário" class="enviar">
 			</form>
 
-            <div section botao_voltar>
-                <button><a href="index.html">Voltar</button>
-            </div>
 
 			
 		</main>
 
 		<footer>
-			<ul>
+            <aside class="foco">
+				<div class="missao">
+                	<p><strong>Missão</strong></p>
+                	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis delectus voluptatum vero facilis quisquam explicabo placeat quos. Vero impedit voluptas unde praesentium ut libero? Ipsum perspiciatis fuga commodi? At, dolorem!</p>
+                </div>
+				<div class="visao">
+					<p><strong>Visão</strong></p>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis delectus voluptatum vero facilis quisquam explicabo placeat quos. Vero impedit voluptas unde praesentium ut libero? Ipsum perspiciatis fuga commodi? At, dolorem!</p>
+				</div>
+               
+                <div class="valores">
+					<p><strong>Valores</strong></p>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis delectus voluptatum vero facilis quisquam explicabo placeat quos. Vero impedit voluptas unde praesentium ut libero? Ipsum perspiciatis fuga commodi? At, dolorem!</p>
+				</div>   
+            </aside>
+			<div class="copy">
+				<p>Copyright Plantec 2022</p>
+				<p><strong>Rua Proz, 120</strong></p>
+			</div>
+			<ul class="logos_rodape">
 				<li>
-					Endereço: Rua Proz, 120
-					<img src="./Imagens/logo_instagram.png" alt="logo Instagram">
-					<img src="./Imagens/logo_facebook.png" alt="logo Faceboook">
-					<img src="./Imagens/logo_twitter.png" alt="logo Twitter">
+					<a href="https://www.instagram.com/"><img src="./img/icones_logos/logo_instagram.png" alt="logo Instagram">
+					<a href="https://pt-br.facebook.com/"><img src="./img/icones_logos/logo_facebook.png" alt="logo Faceboook">
+					<a href="https://twitter.com/"><img src="./img/icones_logos/logo_twitter.png" alt="logo Twitter">
 				</li>
 			</ul>
-			<p class="copyright">&copy; Copyright Plantec 2022 - 2019</p>
-            <aside>
-                <p><strong>Missão</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis delectus voluptatum vero facilis quisquam explicabo placeat quos. Vero impedit voluptas unde praesentium ut libero? Ipsum perspiciatis fuga commodi? At, dolorem!</p>
-                
-                <p><strong>Visão</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis delectus voluptatum vero facilis quisquam explicabo placeat quos. Vero impedit voluptas unde praesentium ut libero? Ipsum perspiciatis fuga commodi? At, dolorem!</p>
-                
-                <p><strong>Valores</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis delectus voluptatum vero facilis quisquam explicabo placeat quos. Vero impedit voluptas unde praesentium ut libero? Ipsum perspiciatis fuga commodi? At, dolorem!</p>
-                
-            </aside>
-			<p class="copyright">&copy; Copyright Plantec 2022</p>
+			
 		</footer>
 	</body>
 </html>
