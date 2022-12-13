@@ -28,9 +28,11 @@ a {
     margin: 0 auto;
 }
 .contato {
-    margin: 2rem;
+    margin: 0.25em;
+    background-color: antiquewhite;
+    width: 100%;
 }
-form label, form legend {
+form label {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -38,8 +40,8 @@ form label, form legend {
 .enviar {
     width: 40%;
     padding: 15px 0;
-    background: orange;
-    color: white;
+    background: aqua;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     border: none;
@@ -60,12 +62,11 @@ form label, form legend {
     font-size:x-large;
     margin: 1rem;
 }
-.icones_rodape{
-    display: flex;
-    margin-top: 12px;
+.logos_rodape {
+    align-items: flex-end;
     margin-left: 2rem;
 }
 .copy {
-    display: flex;
-
+    display: block;
+    margin-left: 1rem;
 }
