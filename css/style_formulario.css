@@ -46,7 +46,6 @@ form label {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    transition: 2s all;
     cursor: pointer;
 }
 
