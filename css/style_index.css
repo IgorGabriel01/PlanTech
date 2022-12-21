@@ -9,6 +9,12 @@ a {
     color: black;
 }
 
+.links-header {
+    color: black;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+
 header {
     background-color: #A8DE7E;
     height: 130px;
@@ -28,11 +34,18 @@ header {
     background-color: antiquewhite;
 }
 
+.img-header {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
 .navegacao {
     display: flex;
 }
 
 .itenslista {
+    display:flex;
     margin-top: 50px;
     margin-left: 40px;
     font-size: 20px;
@@ -60,6 +73,7 @@ aside {
     width: 15%;
     border-right: 3px solid black;
     border-bottom: 3px solid black;
+    padding-top: 42px;
 }
 
 .botoes {
