@@ -130,6 +130,7 @@ ul{
 }
 .div-pai-produtos{
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 50px;
     margin-left: 40px;
