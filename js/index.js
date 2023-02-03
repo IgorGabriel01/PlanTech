@@ -22,14 +22,13 @@ botaoProdutos.addEventListener("click", ()=>{
 
 //Criando Produtos/Objetos para inserção na DivPai com DOM
 const arrayProdutos = [
-    {
-        imagem: "../img/icones_logos/icon-logo.png",
+    {   
         produto: "Tesoura 155mm Trapp",
         precoSublinhado: "De: R$ 15,90",
         preco: "Por: R$ 13,90"
     },
     {
-        produto: "teste1",
+        produto: "gostei muito da loja",
         precoSublinhado: "De: R$ 15,90",
         preco: "Por: R$ 13,90"
     },
