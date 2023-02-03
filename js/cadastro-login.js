@@ -75,7 +75,7 @@ confirmaEmailInput.addEventListener("change", (e)=>{
         validacao.confirmaEmail = true;
     }else{
         errado(confirmaEmailInput,textoConfirmaEmail);
-        textoConfirmaEmail.innerText = "Insira um E-mail Válido"
+        textoConfirmaEmail.innerText = "Os E-mails precisam ser iguais"
     }
 })
 
