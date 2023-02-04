@@ -1,15 +1,5 @@
 //Capturando o Elemento botão produtos e o Elemento Div Produtos
 let botaoProdutos = document.getElementById("botao-produtos");
-let divProdutos = document.getElementById("div-produtos");
-
-divProdutos.addEventListener("mouseover", ()=>{
-    botaoProdutos.classList.remove("invisible");
-    botaoProdutos.classList.add("mostra-botao-produtos-index");
-})
-divProdutos.addEventListener("mouseout", ()=>{
-    botaoProdutos.classList.add("invisible");
-    botaoProdutos.classList.remove("mostra-botao-produtos-index");
-})
 
 //Capturando os itens do Carrinho
 let quantidadeCarrinho = document.getElementById("quantidade-carrinho");
@@ -75,7 +65,7 @@ for(i = 0; i < arrayProdutos.length; i++){
             <p class="text-produtos">${arrayProdutos[i].produto}</p>
             <small><s class="text-produtos">${arrayProdutos[i].precoSublinhado}</s></small>
             <p class="text-produtos">${arrayProdutos[i].preco}</p>
-            <p id="botao-produtos" class="invisible">Adicionar ao Carrinho</p>
+            <p id="botao-produtos" class="botao-produtos-index">Adicionar ao Carrinho</p>
         </div>
     `
     let divPai = document.getElementById("div-pai");

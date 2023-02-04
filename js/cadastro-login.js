@@ -10,15 +10,6 @@ function errado(nomeInput,textoAjudaNome){
     nomeInput.classList.remove("correto");
 }
 
-//Criação de Objeto para verificação de envio do Formulário
-let validacao = {
-    nome: false,
-    idade: false,
-    email: false,
-    confirmaEmail: false,
-    senha: false
-}
-
 //Validação Nome
 let nomeInput = document.getElementById("nome");
 let textoAjudaNome = document.getElementById("texto-ajuda-nome");
@@ -27,10 +18,11 @@ nomeInput.addEventListener("change", (e)=>{
     let valor = e.target.value.trim()
     if(valor.length >= 3){
         correto(nomeInput,textoAjudaNome);
-        validacao.nome = true;
+        objetoValidacao.nome = true
     }else{
         errado(nomeInput,textoAjudaNome);
-        textoAjudaNome.innerText = "Insira um Nome Válido"
+        textoAjudaNome.innerText = "Insira um Nome Válido";
+        objetoValidacao.nome = false
     }
 })
 
@@ -42,10 +34,9 @@ idadeInput.addEventListener("change", (e)=>{
     let valor = e.target.value.trim()
     if(valor >= 18){
         correto(idadeInput,textoAjudaIdade);
-        validacao.idade = true;
     }else{
         errado(idadeInput,textoAjudaIdade);
-        textoAjudaIdade.innerText = "Você precisa ter mais que 18 anos"
+        textoAjudaIdade.innerText = "Você precisa ter mais que 18 anos";
     }
 })
 
@@ -57,10 +48,9 @@ emailInput.addEventListener("change", (e)=>{
     let valor = e.target.value.trim()
     if(valor.includes("@") && valor.includes(".com")){
         correto(emailInput,textoAjudaEmail);
-        validacao.email = true;
     }else{
         errado(emailInput,textoAjudaEmail);
-        textoAjudaEmail.innerText = "Insira um E-mail Válido"
+        textoAjudaEmail.innerText = "Insira um E-mail Válido";
     }
 })
 
@@ -72,10 +62,9 @@ confirmaEmailInput.addEventListener("change", (e)=>{
     let valor = e.target.value.trim()
     if(valor == emailInput.value){
         correto(confirmaEmailInput,textoConfirmaEmail);
-        validacao.confirmaEmail = true;
     }else{
         errado(confirmaEmailInput,textoConfirmaEmail);
-        textoConfirmaEmail.innerText = "Os E-mails precisam ser iguais"
+        textoConfirmaEmail.innerText = "Os E-mails precisam ser iguais";
     }
 })
 
@@ -87,13 +76,65 @@ senhaInput.addEventListener("change", (e)=>{
     let valor = e.target.value.trim()
     if(valor.length >= 5){
         correto(senhaInput,textoAjudaSenha);
-        validacao.senha = true;
     }else{
         errado(senhaInput,textoAjudaSenha);
-        textoAjudaSenha.innerText = "Sua Senha precisa ter pelo menos 5 caracteres"
+        textoAjudaSenha.innerText = "Sua Senha precisa ter pelo menos 5 caracteres";
     }
 })
 
-//Criação de Objeto para verificação de envio do Formulário
+//Validação Email - Login
+let emailLogin = document.getElementById("email-login");
+let textoAjudaEmailLogin = document.getElementById("texto-ajuda-login");
 
-console.log(validacao.nome);
+emailLogin.addEventListener("change", (e)=>{
+    let valor = e.target.value.trim();
+    if(valor == "gui100gabriel@gmail.com"){
+        correto(emailLogin,textoAjudaEmailLogin);
+    } else {
+        errado(emailLogin,textoAjudaEmailLogin);
+        textoAjudaEmailLogin.innerText = "E-mail não encontrado";
+    }
+})
+
+//Validação Senha - Login
+let senhaLogin = document.getElementById("senha-login");
+let textoAjudaSenhaLogin = document.getElementById("texto-ajuda-senha-login");
+
+senhaLogin.addEventListener("change", (e)=>{
+    let valor = e.target.value.trim();
+    if(valor == "1011proz"){
+        correto(senhaLogin,textoAjudaSenhaLogin);
+    } else {
+        errado(senhaLogin,textoAjudaSenhaLogin);
+        textoAjudaSenhaLogin.innerText = "Senha incorreta";
+    }
+})
+
+//Mostrar Senha Cadastro
+let clickMostrarSenhaCadastrar = document.getElementById("mostrar-password-cadastrar");
+clickMostrarSenhaCadastrar.addEventListener("mousedown", ()=>{
+    senhaInput.type = "text";
+    })
+clickMostrarSenhaCadastrar.addEventListener("mouseup", ()=>{
+    senhaInput.type = "password";
+})
+
+//Mostrar Senha Login
+let clickMostrarSenha = document.getElementById("mostrar-password-login");
+clickMostrarSenha.addEventListener("mousedown", ()=>{
+    senhaLogin.type = "text";
+    })
+clickMostrarSenha.addEventListener("mouseup", ()=>{
+    senhaLogin.type = "password";
+})
+
+//Validação de envio Formulário
+let objetoValidacao = {
+    nome: false,
+    idade: false,
+    email: false,
+    repetirEmail: false,
+    senha: false
+}
+
+console.log(objetoValidacao);

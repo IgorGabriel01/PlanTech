@@ -32,22 +32,29 @@
         <p class="invisible" id="texto-ajuda-confirma-email">texto de ajuda</p>
 
         <label for="senha">Senha</label>
-        <input type="password" id="senha" placeholder="Digite um Senha">
+        <div style="display: flex;">
+            <input type="password" id="senha" placeholder="Digite um Senha">
+            <img style="width: 25px; height: 25px; margin-left: 5px; margin-top: 5px;" src="../img/icones_logos/mostrar-password.png" id="mostrar-password-cadastrar" alt="mostrar-password">
+        </div>
         <p class="invisible" id="texto-ajuda-senha">texto de ajuda</p>
-        <button>Cadastrar</button>
+        <button type="submit">Cadastrar</button>
     </form>
     <form class="cadastro-login" action="">
         <h2>Faça Login</h2>
         <label for="email-login">E-mail</label>
         <input type="text" id="email-login" placeholder="Digite seu E-mail">
-        <p class="invisible">texto de ajuda</p>
+        <p class="invisible" id="texto-ajuda-login">texto de ajuda</p>
     
         <label for="senha-login">Senha</label>
-        <input type="password" id="senha-login" placeholder="Digite sua Senha">
-        <p class="invisible">texto de ajuda</p>
+        <div style="display: flex;">
+            <input type="password" id="senha-login" placeholder="Digite sua Senha">
+            <img style="width: 25px; height: 25px; margin-left: 5px; margin-top: 5px;" src="../img/icones_logos/mostrar-password.png" id="mostrar-password-login" alt="mostrar-password">
+        </div>
+        <p class="invisible" id="texto-ajuda-senha-login">texto de ajuda</p>
+        
 
         <p style="text-align: center;">Esqueceu a Senha?</p>
-        <button>Entrar</button>
+        <button type="submit">Entrar</button>
     </form>
 </body>
 </html>
