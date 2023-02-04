@@ -13,7 +13,7 @@ label{
 }
 body{
     display: flex;
-    background-color: #C0C0C0;
+    background-color: rgb(246, 250, 248);
     justify-content: space-evenly;
     align-items: baseline;
 }
@@ -48,7 +48,7 @@ button{
     margin-left: 77px;
 }
 
-/*Estilos Dinâmicos*/
+/*Estilos DinÃ¢micos*/
 .correto{
     border: #95c83e  1px solid;
     background-color: #98FB98;
@@ -61,4 +61,8 @@ button{
     display: block;
     font-size: 10px;
     margin-left: 5px;
+}
+nav{
+    list-style: none;
+    margin-left: 20px;
 }
