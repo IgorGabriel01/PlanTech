@@ -23,47 +23,47 @@ botaoProdutos.addEventListener("click", ()=>{
 //Criando Produtos/Objetos para inserção na DivPai com DOM
 const arrayProdutos = [
     {   
-        imagem: "../img/index_img/index-2.jpg",
-        produto: "Vaso de Flores",
+        imagem: "../img/plantas_img/Frutíferas.png",
+        produto: "Frutíferas",
         precoSublinhado: "De: R$ 15,90",
         preco: "Por: R$ 13,90"
     },
     {   
-        imagem: "../img/index_img/index-3.jpg",
-        produto: "Vaso Comum Plástico",
+        imagem: "../img/plantas_img/Jardinagem.png",
+        produto: "Jardinagem",
         precoSublinhado: "De: R$ 5,90",
         preco: "Por: R$ 3,90"
     },
     {   
-        imagem: "../img/index_img/index-4.jpg",
-        produto: "Serrote Fino 150mm Life",
+        imagem: "../img/plantas_img/Medicinais.png",
+        produto: "Medicinais",
         precoSublinhado: "De: R$ 199,90",
         preco: "Por: R$ 159,90"
     },
     {   
-        imagem: "../img/index_img/index-5.jpg",
-        produto: "Vaso Literato Retangular",
+        imagem: "../img/plantas_img/Ornamentais.png",
+        produto: "Ornamentais",
         precoSublinhado: "De: R$ 209,90",
         preco: "Por: R$ 189,90"
     },
     {   
-        imagem: "../img/index_img/index-6.jpg",
-        produto: "Amora 23 anos",
-        precoSublinhado: "De: R$ 1.299,90",
+        imagem: "../img/plantas_img/Suculentas.png",
+        produto: "Suculentas",
+        precoSublinhado: "De: R$ 299,90",
         preco: "Por: R$ 999,90"
     },
-    {   
-        imagem: "../img/index_img/index-7.jpg",
-        produto: "Semente de Alecrim",
-        precoSublinhado: "De: R$ 9,90",
-        preco: "Por: R$ 5,90"
-    },
-    {   
-        imagem: "../img/index_img/index-8.jpg",
-        produto: "Muda de Palmeira Areca",
-        precoSublinhado: "De: R$ 19,90",
-        preco: "Por: R$ 12,90"
-    }
+    // {   
+    //     imagem: "../img/index_img/index-7.jpg",
+    //     produto: "Semente de Alecrim",
+    //     precoSublinhado: "De: R$ 9,90",
+    //     preco: "Por: R$ 5,90"
+    // },
+    // {   
+    //     imagem: "../img/index_img/index-8.jpg",
+    //     produto: "Muda de Palmeira Areca",
+    //     precoSublinhado: "De: R$ 19,90",
+    //     preco: "Por: R$ 12,90"
+    // }
 ]
 
 //Criando o elemento Div Produtos com o DOM

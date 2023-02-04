@@ -23,44 +23,50 @@ botaoProdutos.addEventListener("click", ()=>{
 //Criando Produtos/Objetos para inserção na DivPai com DOM
 const arrayProdutos = [
     {   
-        imagem: "../img/index_img/index-2.jpg",
-        produto: "Vaso de Flores",
-        precoSublinhado: "De: R$ 15,90",
+        imagem: "../img/sementes_img/alface.jpg",
+        produto: "alface",
+        precoSublinhado: "De: R$ 5,90",
         preco: "Por: R$ 13,90"
     },
     {   
-        imagem: "../img/index_img/index-3.jpg",
-        produto: "Vaso Comum Plástico",
+        imagem: "../img/sementes_img/amorperfeito.jpg",
+        produto: "Amor Perfeito",
         precoSublinhado: "De: R$ 5,90",
         preco: "Por: R$ 3,90"
     },
     {   
-        imagem: "../img/index_img/index-4.jpg",
-        produto: "Serrote Fino 150mm Life",
-        precoSublinhado: "De: R$ 199,90",
+        imagem: "../img/sementes_img/capuchinha.jpg",
+        produto: "Capuchinha",
+        precoSublinhado: "De: R$ 9,90",
         preco: "Por: R$ 159,90"
     },
     {   
-        imagem: "../img/index_img/index-5.jpg",
-        produto: "Vaso Literato Retangular",
+        imagem: "../img/sementes_img/cebolinha.jpg",
+        produto: "Cebolinha",
         precoSublinhado: "De: R$ 209,90",
         preco: "Por: R$ 189,90"
     },
     {   
-        imagem: "../img/index_img/index-6.jpg",
-        produto: "Amora 23 anos",
-        precoSublinhado: "De: R$ 1.299,90",
+        imagem: "../img/sementes_img/escablosa.jpg",
+        produto: "Escablosa",
+        precoSublinhado: "De: R$ 299,90",
         preco: "Por: R$ 999,90"
     },
     {   
-        imagem: "../img/index_img/index-7.jpg",
-        produto: "Semente de Alecrim",
+        imagem: "../img/sementes_img/manjericao.jpg",
+        produto: "Manjericão",
         precoSublinhado: "De: R$ 9,90",
         preco: "Por: R$ 5,90"
     },
     {   
-        imagem: "../img/index_img/index-8.jpg",
-        produto: "Muda de Palmeira Areca",
+        imagem: "../img/sementes_img/protea.jpg",
+        produto: "Protea",
+        precoSublinhado: "De: R$ 19,90",
+        preco: "Por: R$ 12,90"
+    },
+    {   
+        imagem: "../img/sementes_img/sempreviva.jpg",
+        produto: "Sempre Viva",
         precoSublinhado: "De: R$ 19,90",
         preco: "Por: R$ 12,90"
     }
