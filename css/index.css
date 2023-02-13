@@ -114,24 +114,22 @@ ul{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    margin-left: 20px;
-    margin-right: 20px;
-    border: 3px solid #5a8729;
-    border-radius: 15px;
     height: 50px;
     align-items: center;
+    border-top: 1px solid #5a8729;
+    border-bottom: 1px solid #5a8729;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 #primeiro-rodape{
     display: flex;
     font-size: 13px;
     justify-content: space-evenly;
     margin-top: 30px;
+    padding-top: 15px;
     padding-bottom: 30px;
+    border-top: 1px solid #5a8729;
     border-bottom: 1px solid #C0C0C0;
-    margin-left: 20px;
-    margin-right: 20px;
-    border: 3px solid #5a8729;
-    border-radius: 15px;
     height: 120px;
     align-items: center;
 }
@@ -218,10 +216,10 @@ ul{
 
 /*Efeitos Dinâmicos*/
 .hover:hover{
-    opacity: 0.7;
+    opacity: 0.5;
     cursor: pointer;
 }
 
 .botao-produtos-index:hover{
-    opacity: 0.7;
+    opacity: 0.5;
 }

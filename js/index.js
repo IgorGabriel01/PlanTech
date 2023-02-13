@@ -1,14 +1,5 @@
-//Capturando o Elemento botão produtos e o Elemento Div Produtos
-let botaoProdutos = document.getElementById("botao-produtos");
-
 //Capturando os itens do Carrinho
 let quantidadeCarrinho = document.getElementById("quantidade-carrinho");
-//Adiocionando o Valor de itens no Carrinho
-let contador = 0;
-botaoProdutos.addEventListener("click", ()=>{
-    contador = contador + 1;
-    quantidadeCarrinho.innerText = contador;
-})
 
 //Criando Produtos/Objetos para inserção na DivPai com DOM
 const arrayProdutos = [
@@ -72,3 +63,12 @@ for(i = 0; i < arrayProdutos.length; i++){
     divPai.appendChild(div);
 }
 
+//Capturando o Elemento botão produtos e o Elemento Div Produtos
+let botaoProdutos = document.getElementsByClassName("botao-produtos-index");
+let contador = 0;
+for(i = 0; i < botaoProdutos.length; i++){
+    botaoProdutos[i].addEventListener("click", ()=>{
+        contador = contador + 1;
+        quantidadeCarrinho.innerText = contador;
+    })
+}

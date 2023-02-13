@@ -128,13 +128,8 @@ clickMostrarSenha.addEventListener("mouseup", ()=>{
     senhaLogin.type = "password";
 })
 
-//Validação de envio Formulário
-let objetoValidacao = {
-    nome: false,
-    idade: false,
-    email: false,
-    repetirEmail: false,
-    senha: false
-}
-
-console.log(objetoValidacao);
+//Botão Voltar
+let botaoVoltar = document.getElementById("botao-voltar");
+botaoVoltar.addEventListener("click", ()=>{
+    window.history.back()
+})
