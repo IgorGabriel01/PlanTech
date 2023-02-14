@@ -1,0 +1,45 @@
+main{
+    display: flex;
+}
+aside{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    border-right: 1px solid #5a8729;
+    padding-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: #1e4405;
+}
+.h2-plantas{
+    color:#1e4405 ;
+    margin-left: 15px;
+    font-size: 30px;
+}
+#pai-ul{
+    font-size: 18px;
+}
+.li-aside{
+    margin-top: 30px;
+}
+#div-pai-plantas{
+    margin-top: 50px;
+}
+#div-pai-frutiferas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-frutiferas{
+    width: 150px;
+    height: 150px;
+}
+.text-frutiferas{
+    color: #1e4405;
+    text-align: center;
+}
+
+/*Estilos Dinâmicos*/
+.li-aside:hover{
+    opacity: 0.5;
+}
