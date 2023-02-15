@@ -26,9 +26,24 @@ a{
 #div-pai-plantas{
     margin-top: 50px;
 }
+
+/*Estilos da sessão Frutiferas*/
 #div-pai-frutiferas{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.div-frutiferas-produtos{
+    text-align: center;
+    padding: 20px;
+    border: #C0C0C0 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 210px;
+    height: 270px;
+    margin-top: 35px;
+    margin-left: 35px;
 }
 .img-frutiferas{
     width: 150px;
@@ -36,10 +51,136 @@ a{
 }
 .text-frutiferas{
     color: #1e4405;
-    text-align: center;
 }
+.botao-produtos-frutiferas{
+    background-color: #00a651;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*Estilos da sessão Flores*/
+#div-pai-flores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.div-flores-produtos{
+    text-align: center;
+    padding: 20px;
+    border: #C0C0C0 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 210px;
+    height: 270px;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.img-flores{
+    width: 150px;
+    height: 150px;
+}
+.text-flores{
+    color: #1e4405;
+}
+.botao-produtos-flores{
+    background-color: #00a651;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*Estilos da sessão Ornamentais*/
+#div-pai-ornamentais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.div-ornamentais-produtos{
+    text-align: center;
+    padding: 20px;
+    border: #C0C0C0 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 210px;
+    height: 270px;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.img-ornamentais{
+    width: 150px;
+    height: 150px;
+}
+.text-ornamentais{
+    color: #1e4405;
+}
+.botao-produtos-samambaias{
+    background-color: #00a651;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*Estilos da sessão Samambaias*/
+#div-pai-samambaias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.div-samambaias-produtos{
+    text-align: center;
+    padding: 20px;
+    border: #C0C0C0 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 210px;
+    height: 270px;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.img-samambaias{
+    width: 150px;
+    height: 150px;
+}
+.text-samambaias{
+    color: #1e4405;
+}
+.botao-produtos-samambaias{
+    background-color: #00a651;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
 
 /*Estilos Dinâmicos*/
 .li-aside:hover{
+    opacity: 0.5;
+}
+.botao-produtos-frutiferas:hover{
+    opacity: 0.5;
+}
+.botao-produtos-flores:hover{
+    opacity: 0.5;
+}
+.botao-produtos-ornamentais:hover{
+    opacity: 0.5;
+}
+.botao-produtos-samambaias:hover{
     opacity: 0.5;
 }
