@@ -52,43 +52,25 @@ for(i = 0; i < mono.length ; i++){
     divPaiMono.appendChild(divMono);
 }
 
-//Inserção de Sementes Monocotiledôneas
+//Inserção de Sementes Dicotiledôneas
 const dico = [
     {
-        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-1.jpg",
-        produto: "Muda de Amora Preta",
-        precoSublinhado: "De: R$ 85,90",
-        preco: "Por: R$ 53,90"
+        imagem: "../img/sementes_img/dico/sementes-dico-1.jpg",
+        produto: "Sementes de Rabanete",
+        precoSublinhado: "De: R$ 5,90",
+        preco: "Por: R$ 3,90"
     },
     {
-        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-2.jpg",
-        produto: "Muda de Caju Anão",
-        precoSublinhado: "De: R$ 29,90",
-        preco: "Por: R$ 15,90"
+        imagem: "../img/sementes_img/dico/sementes-dico-2.jpg",
+        produto: "Sementes de Melancia",
+        precoSublinhado: "De: R$ 9,90",
+        preco: "Por: R$ 5,90"
     },
     {
-        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-3.jpg",
-        produto: "Ameixa de Madagascar",
-        precoSublinhado: "De: R$ 35,90",
-        preco: "Por: R$ 33,90"
-    },
-    {
-        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-4.jpg",
-        produto: "Ameixa Kelsy Paulista",
-        precoSublinhado: "De: R$ 45,90",
-        preco: "Por: R$ 41,90"
-    },
-    {
-        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-5.jpg",
-        produto: "Azeitona-do-Ceilão",
-        precoSublinhado: "De: R$ 25,90",
-        preco: "Por: R$ 19,90"
-    },
-    {
-        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-6.jpg",
-        produto: "Mangostão Amarelo",
-        precoSublinhado: "De: R$ 55,90",
-        preco: "Por: R$ 37,90"
+        imagem: "../img/sementes_img/dico/sementes-dico-3.jpg",
+        produto: "Sementes de Pimentão",
+        precoSublinhado: "De: R$ 5,90",
+        preco: "Por: R$ 3,90"
     }
 ]
 

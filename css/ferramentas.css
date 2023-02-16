@@ -1,0 +1,141 @@
+main{
+    display: flex;
+}
+aside{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    border-right: 1px solid #5a8729;
+    padding-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: #1e4405;
+}
+.h2-ferramentas{
+    color:#1e4405 ;
+    margin-left: 15px;
+    font-size: 30px;
+}
+#pai-ul{
+    font-size: 18px;
+}
+.li-aside{
+    margin-top: 30px;
+}
+#div-pai-ferramentas{
+    margin-top: 50px;
+}
+
+/*Estilos da sessão Luvas*/
+#div-pai-luvas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.div-luvas-produtos{
+    text-align: center;
+    padding: 20px;
+    border: #C0C0C0 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 210px;
+    height: 270px;
+    margin-top: 35px;
+    margin-left: 75px;
+}
+.img-luvas{
+    width: 150px;
+    height: 150px;
+}
+.text-luvas{
+    color: #1e4405;
+}
+.botao-produtos-luvas{
+    background-color: #00a651;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*Estilos da sessão Pá*/
+#div-pai-pa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.div-pa-produtos{
+    text-align: center;
+    padding: 20px;
+    border: #C0C0C0 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 210px;
+    height: 270px;
+    margin-top: 35px;
+    margin-left: 75px;
+}
+.img-pa{
+    width: 150px;
+    height: 150px;
+}
+.text-pa{
+    color: #1e4405;
+}
+.botao-produtos-pa{
+    background-color: #00a651;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*Estilos da sessão Tesouras*/
+#div-pai-tesouras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.div-tesouras-produtos{
+    text-align: center;
+    padding: 20px;
+    border: #C0C0C0 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 210px;
+    height: 270px;
+    margin-top: 35px;
+    margin-left: 75px;
+}
+.img-tesouras{
+    width: 150px;
+    height: 150px;
+}
+.text-tesouras{
+    color: #1e4405;
+}
+.botao-produtos-tesouras{
+    background-color: #00a651;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*Estilos Dinâmicos*/
+.botao-produtos-luvas:hover{
+    opacity: 0.5;
+}
+.li-aside:hover{
+    opacity: 0.5;
+}
