@@ -1,0 +1,141 @@
+main{
+    display: flex;
+}
+aside{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    border-right: 1px solid #5a8729;
+    padding-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: #1e4405;
+}
+.h2-vasos{
+    color:#1e4405 ;
+    margin-left: 15px;
+    font-size: 30px;
+}
+#pai-ul-vasos{
+    font-size: 18px;
+}
+.li-aside-vasos{
+    margin-top: 30px;
+}
+#div-pai-vasos{
+    margin-top: 50px;
+}
+
+/*Estilos da sessão Plástico*/
+#div-pai-plastico{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.div-plastico-produtos{
+    text-align: center;
+    padding: 20px;
+    border: #C0C0C0 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 210px;
+    height: 270px;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.img-plastico{
+    width: 150px;
+    height: 150px;
+}
+.text-plastico{
+    color: #1e4405;
+}
+.botao-produtos-plastico{
+    background-color: #00a651;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*Estilos da sessão Cerâmica*/
+#div-pai-ceramica{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.div-ceramica-produtos{
+    text-align: center;
+    padding: 20px;
+    border: #C0C0C0 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 210px;
+    height: 270px;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.img-ceramica{
+    width: 150px;
+    height: 150px;
+}
+.text-ceramica{
+    color: #1e4405;
+}
+.botao-produtos-ceramica{
+    background-color: #00a651;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*Estilos da sessão Pedra*/
+#div-pai-pedra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.div-pedra-produtos{
+    text-align: center;
+    padding: 20px;
+    border: #C0C0C0 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 210px;
+    height: 270px;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.img-pedra{
+    width: 150px;
+    height: 150px;
+}
+.text-pedra{
+    color: #1e4405;
+}
+.botao-produtos-pedra{
+    background-color: #00a651;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*Estilos Dinâmicos*/
+.botao-produtos-plastico:hover{
+    opacity: 0.5;
+}
+.li-aside-vasos:hover{
+    opacity: 0.5;
+}

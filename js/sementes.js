@@ -1,90 +1,120 @@
-//Capturando o Elemento botão produtos e o Elemento Div Produtos
-let botaoProdutos = document.getElementById("botao-produtos");
-let divProdutos = document.getElementById("div-produtos");
-
-divProdutos.addEventListener("mouseover", ()=>{
-    botaoProdutos.classList.remove("invisible");
-    botaoProdutos.classList.add("mostra-botao-produtos-index");
-})
-divProdutos.addEventListener("mouseout", ()=>{
-    botaoProdutos.classList.add("invisible");
-    botaoProdutos.classList.remove("mostra-botao-produtos-index");
-})
-
-//Capturando os itens do Carrinho
-let quantidadeCarrinho = document.getElementById("quantidade-carrinho");
-//Adiocionando o Valor de itens no Carrinho
-let contador = 0;
-botaoProdutos.addEventListener("click", ()=>{
-    contador = contador + 1;
-    quantidadeCarrinho.innerText = contador;
-})
-
-//Criando Produtos/Objetos para inserção na DivPai com DOM
-const arrayProdutos = [
-    {   
-        imagem: "../img/sementes_img/alface.jpg",
-        produto: "alface",
-        precoSublinhado: "De: R$ 5,90",
-        preco: "Por: R$ 13,90"
-    },
-    {   
-        imagem: "../img/sementes_img/amorperfeito.jpg",
-        produto: "Amor Perfeito",
+//Inserção de Sementes Monocotiledôneas
+const mono = [
+    {
+        imagem: "../img/sementes_img/mono/sementes-mono-1.jpg",
+        produto: "Melíssa Erva Cídreira",
         precoSublinhado: "De: R$ 5,90",
         preco: "Por: R$ 3,90"
     },
-    {   
-        imagem: "../img/sementes_img/capuchinha.jpg",
-        produto: "Capuchinha",
-        precoSublinhado: "De: R$ 9,90",
-        preco: "Por: R$ 159,90"
-    },
-    {   
-        imagem: "../img/sementes_img/cebolinha.jpg",
-        produto: "Cebolinha",
-        precoSublinhado: "De: R$ 209,90",
-        preco: "Por: R$ 189,90"
-    },
-    {   
-        imagem: "../img/sementes_img/escablosa.jpg",
-        produto: "Escablosa",
-        precoSublinhado: "De: R$ 299,90",
-        preco: "Por: R$ 999,90"
-    },
-    {   
-        imagem: "../img/sementes_img/manjericao.jpg",
-        produto: "Manjericão",
+    {
+        imagem: "../img/sementes_img/mono/sementes-mono-2.jpg",
+        produto: "Sementes de Milho",
         precoSublinhado: "De: R$ 9,90",
         preco: "Por: R$ 5,90"
     },
-    {   
-        imagem: "../img/sementes_img/protea.jpg",
-        produto: "Protea",
-        precoSublinhado: "De: R$ 19,90",
-        preco: "Por: R$ 12,90"
+    {
+        imagem: "../img/sementes_img/mono/sementes-mono-3.jpg",
+        produto: "Quiabo Santa Cruz",
+        precoSublinhado: "De: R$ 5,90",
+        preco: "Por: R$ 3,90"
     },
-    {   
-        imagem: "../img/sementes_img/sempreviva.jpg",
-        produto: "Sempre Viva",
-        precoSublinhado: "De: R$ 19,90",
-        preco: "Por: R$ 12,90"
+    {
+        imagem: "../img/sementes_img/mono/sementes-mono-4.jpg",
+        produto: "Almeirão Pão De Açúcar",
+        precoSublinhado: "De: R$ 5,90",
+        preco: "Por: R$ 1,90"
+    },
+    {
+        imagem: "../img/sementes_img/mono/sementes-mono-5.jpg",
+        produto: "Isla Rúcula Gigante",
+        precoSublinhado: "De: R$ 5,90",
+        preco: "Por: R$ 2,90"
+    },
+    {
+        imagem: "../img/sementes_img/mono/sementes-mono-6.jpg",
+        produto: "Alface Crespa",
+        precoSublinhado: "De: R$ 9,90",
+        preco: "Por: R$ 7,90"
     }
 ]
 
-//Criando o elemento Div Produtos com o DOM
-for(i = 0; i < arrayProdutos.length; i++){
-    let div = document.createElement("div");
-    div.innerHTML = `
-        <div id="div-produtos" class="produtos-index">
-            <img class="img-produtos-index" src=${arrayProdutos[i].imagem} alt="produto-1-index">
-            <p class="text-produtos">${arrayProdutos[i].produto}</p>
-            <small><s class="text-produtos">${arrayProdutos[i].precoSublinhado}</s></small>
-            <p class="text-produtos">${arrayProdutos[i].preco}</p>
-            <p id="botao-produtos" class="invisible">Adicionar ao Carrinho</p>
-        </div>
+for(i = 0; i < mono.length ; i++){
+    let divMono = document.createElement("div");
+    divMono.innerHTML = `
+        <img class = "img-mono" src=${mono[i].imagem} alt="Produtos-mono">
+        <p class = "text-mono" >${mono[i].produto}</p>
+        <small><s class="text-mono">${mono[i].precoSublinhado}</s></small>
+        <p class="text-mono">${mono[i].preco}</p>
+        <p class="botao-produtos-mono botao-adicionar">Adicionar ao Carrinho</p>
     `
-    let divPai = document.getElementById("div-pai");
-    divPai.appendChild(div);
+    divMono.classList.add("div-mono-produtos");
+    let divPaiMono = document.getElementById("div-pai-mono");
+    divPaiMono.appendChild(divMono);
 }
 
+//Inserção de Sementes Monocotiledôneas
+const dico = [
+    {
+        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-1.jpg",
+        produto: "Muda de Amora Preta",
+        precoSublinhado: "De: R$ 85,90",
+        preco: "Por: R$ 53,90"
+    },
+    {
+        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-2.jpg",
+        produto: "Muda de Caju Anão",
+        precoSublinhado: "De: R$ 29,90",
+        preco: "Por: R$ 15,90"
+    },
+    {
+        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-3.jpg",
+        produto: "Ameixa de Madagascar",
+        precoSublinhado: "De: R$ 35,90",
+        preco: "Por: R$ 33,90"
+    },
+    {
+        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-4.jpg",
+        produto: "Ameixa Kelsy Paulista",
+        precoSublinhado: "De: R$ 45,90",
+        preco: "Por: R$ 41,90"
+    },
+    {
+        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-5.jpg",
+        produto: "Azeitona-do-Ceilão",
+        precoSublinhado: "De: R$ 25,90",
+        preco: "Por: R$ 19,90"
+    },
+    {
+        imagem: "../img/plantas_img/frutiferas/plantas-frutiferas-6.jpg",
+        produto: "Mangostão Amarelo",
+        precoSublinhado: "De: R$ 55,90",
+        preco: "Por: R$ 37,90"
+    }
+]
+
+for(i = 0; i < dico.length ; i++){
+    let divDico = document.createElement("div");
+    divDico.innerHTML = `
+        <img class = "img-mono" src=${dico[i].imagem} alt="Produtos-dico">
+        <p class = "text-mono" >${dico[i].produto}</p>
+        <small><s class="text-mono">${dico[i].precoSublinhado}</s></small>
+        <p class="text-mono">${dico[i].preco}</p>
+        <p class="botao-produtos-mono botao-adicionar">Adicionar ao Carrinho</p>
+    `
+    divDico.classList.add("div-mono-produtos");
+    let divPaiMono = document.getElementById("div-pai-dico");
+    divPaiMono.appendChild(divDico);
+}
+
+
+//Adicionar ao Carrinho
+let quantidadeCarrinho = document.getElementById("quantidade-carrinho");
+
+let botaoAdicionar = document.getElementsByClassName("botao-adicionar");
+let contador = 0;
+for(i = 0; i < botaoAdicionar.length; i++){
+    botaoAdicionar[i].addEventListener("click", ()=>{
+        contador = contador + 1;
+        quantidadeCarrinho.innerText = contador;
+    })
+}

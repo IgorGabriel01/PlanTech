@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/icones_logos/logo.png">
     <title>Sementes - PlanTech</title>
+    <link rel="stylesheet" href="../css/sementes.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +48,7 @@
                 <div>
                     <a class="hover" id="carrinho" href="carrinho.html">
                         <img class="icon-user-carrinho" src="../img/icones_logos/icon-carrinho.png" alt="icon-carrinho">
-                        <p>0</p>
+                        <p id="quantidade-carrinho">0</p>
                     </a>
                 </div>
             </div>        
@@ -65,28 +66,18 @@
     <main>
         <aside>
             <ul id="pai-ul">
-                <a href=""><li class="li-aside">Frutíferas</li></a>
-                <a href=""><li class="li-aside">Flores</li></a>
-                <a href=""><li class="li-aside">Ornamentais</li></a>
-                <a href=""><li class="li-aside">Samambaias</li></a>
+                <a href="#div-pai-mono"><li class="li-aside">Monocotiledôneas</li></a>
+                <a href="#div-pai-dico"><li class="li-aside">Dicotiledôneas</li></a>
             </ul>
         </aside>
-        <div id="div-pai-plantas">
-            <h2 class="h2-plantas" id="frutiferas">Frutíferas</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolore tenetur aperiam praesentium, ea alias possimus temporibus aspernatur nisi, minima facere voluptas? Ullam minus sapiente doloribus tenetur aperiam inventore temporibus.</p>
+        <div id="div-pai-sementes">
+            <h2 class="h2-sementes" id="mono">Monocotiledôneas</h2>
+            <div id="div-pai-mono">
+                
             </div>
-            <h2 class="h2-plantas">Flores</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium rerum eaque qui ipsam ea sed excepturi quod repellendus minima, officia nemo, et numquam quas rem! Aperiam assumenda minima suscipit quas!</p>
-            </div>
-            <h2 class="h2-plantas">Ornamentais</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quo eligendi ducimus ipsum mollitia omnis rerum doloremque culpa impedit labore sed eveniet, eum hic cupiditate qui corrupti quaerat fuga quod.</p>
-            </div>
-            <h2 class="h2-plantas">Samambaias</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae reiciendis qui quo repudiandae consequuntur provident laborum facere veritatis, architecto, aspernatur labore exercitationem impedit velit vel. Fugiat magni quasi rerum doloremque!</p>
+            <h2 class="h2-sementes" id="dico">Dicotiledôneas</h2>
+            <div id="div-pai-dico">
+                
             </div>
         </div>           
     </main>
