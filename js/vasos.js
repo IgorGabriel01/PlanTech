@@ -1,84 +1,143 @@
-//Capturando o Elemento botão produtos e o Elemento Div Produtos
-let botaoProdutos = document.getElementById("botao-produtos");
-let divProdutos = document.getElementById("div-produtos");
-
-divProdutos.addEventListener("mouseover", ()=>{
-    botaoProdutos.classList.remove("invisible");
-    botaoProdutos.classList.add("mostra-botao-produtos-index");
-})
-divProdutos.addEventListener("mouseout", ()=>{
-    botaoProdutos.classList.add("invisible");
-    botaoProdutos.classList.remove("mostra-botao-produtos-index");
-})
-
-//Capturando os itens do Carrinho
-let quantidadeCarrinho = document.getElementById("quantidade-carrinho");
-//Adiocionando o Valor de itens no Carrinho
-let contador = 0;
-botaoProdutos.addEventListener("click", ()=>{
-    contador = contador + 1;
-    quantidadeCarrinho.innerText = contador;
-})
-
-//Criando Produtos/Objetos para inserção na DivPai com DOM
-const arrayProdutos = [
-    {   
-        imagem: "../img/vasos_img/vaso2.jpg",
-        produto: "Vaso Marrom",
-        precoSublinhado: "De: R$ 15,90",
-        preco: "Por: R$ 13,90"
-    },
-    {   
-        imagem: "../img/vasos_img/vaso3.jpg",
-        produto: "Vaso Preto Pátina",
+//Inserção de Vasos de Plástico
+const plastico = [
+    {
+        imagem: "../img/vasos_img/plastico/vasos-plastico-1.jpg",
+        produto: "Vaso Plástico Preto",
         precoSublinhado: "De: R$ 5,90",
         preco: "Por: R$ 3,90"
     },
-    {   
-        imagem: "../img/vasos_img/vaso4.jpg",
-        produto: "Vaso de Vime",
-        precoSublinhado: "De: R$ 199,90",
-        preco: "Por: R$ 159,90"
+    {
+        imagem: "../img/vasos_img/plastico/vasos-plastico-2.jpg",
+        produto: "Vaso Circular Preto",
+        precoSublinhado: "De: R$ 6,90",
+        preco: "Por: R$ 4,90"
     },
-    {   
-        imagem: "../img/vasos_img/vaso5.jpg",
-        produto: "Vaso Plástico Preto",
-        precoSublinhado: "De: R$ 209,90",
-        preco: "Por: R$ 189,90"
+    {
+        imagem: "../img/vasos_img/plastico/vasos-plastico-3.jpg",
+        produto: "Vaso Circular Marrom",
+        precoSublinhado: "De: R$ 5,90",
+        preco: "Por: R$ 3,90"
     },
-    {   
-        imagem: "../img/vasos_img/vaso6.jpg",
-        produto: "Vaso Plástico Marrom",
-        precoSublinhado: "De: R$ 299,90",
-        preco: "Por: R$ 999,90"
+    {
+        imagem: "../img/vasos_img/plastico/vasos-plastico-4.jpg",
+        produto: "Combo Vasos Pretos",
+        precoSublinhado: "De: R$ 12,90",
+        preco: "Por: R$ 9,90"
     },
-    {   
-        imagem: "../img/vasos_img/vaso7.jpg",
-        produto: "Vaso de Parede",
-        precoSublinhado: "De: R$ 9,90",
-        preco: "Por: R$ 5,90"
+    {
+        imagem: "../img/vasos_img/plastico/vasos-plastico-5.jpg",
+        produto: "Vaso Quadrado Marrom",
+        precoSublinhado: "De: R$ 10,90",
+        preco: "Por: R$ 8,90"
     },
-    // {   
-    //     imagem: "../img/index_img/index-8.jpg",
-    //     produto: "Muda de Palmeira Areca",
-    //     precoSublinhado: "De: R$ 19,90",
-    //     preco: "Por: R$ 12,90"
-    // }
+    {
+        imagem: "../img/vasos_img/plastico/vasos-plastico-6.jpg",
+        produto: "Vaso Verde Bebê",
+        precoSublinhado: "De: R$ 5,90",
+        preco: "Por: R$ 3,90"
+    }
 ]
 
-//Criando o elemento Div Produtos com o DOM
-for(i = 0; i < arrayProdutos.length; i++){
-    let div = document.createElement("div");
-    div.innerHTML = `
-        <div id="div-produtos" class="produtos-index">
-            <img class="img-produtos-index" src=${arrayProdutos[i].imagem} alt="produto-1-index">
-            <p class="text-produtos">${arrayProdutos[i].produto}</p>
-            <small><s class="text-produtos">${arrayProdutos[i].precoSublinhado}</s></small>
-            <p class="text-produtos">${arrayProdutos[i].preco}</p>
-            <p id="botao-produtos" class="invisible">Adicionar ao Carrinho</p>
-        </div>
+for(i = 0; i < plastico.length; i++){
+    let divPlastico = document.createElement("div");
+    divPlastico.innerHTML = `
+        <img class = "img-plastico" src=${plastico[i].imagem} alt="Produtos-plastico">
+        <p class = "text-plastico" >${plastico[i].produto}</p>
+        <small><s class="text-plastico">${plastico[i].precoSublinhado}</s></small>
+        <p class="text-plastico">${plastico[i].preco}</p>
+        <p class="botao-produtos-plastico botao-adicionar">Adicionar ao Carrinho</p>
     `
-    let divPai = document.getElementById("div-pai");
-    divPai.appendChild(div);
+    divPlastico.classList.add("div-plastico-produtos");
+    let divPaiPlastico = document.getElementById("div-pai-plastico");
+    divPaiPlastico.appendChild(divPlastico);
 }
 
+//Inserção de Vasos Cerâmica
+const ceramica = [
+    {
+        imagem: "../img/vasos_img/ceramica/vasos-ceramica-1.jpg",
+        produto: "Vasart Verona Vaso",
+        precoSublinhado: "De: R$ 185,90",
+        preco: "Por: R$ 159,90"
+    },
+    {
+        imagem: "../img/vasos_img/ceramica/vasos-ceramica-2.jpg",
+        produto: "Vasart Malta Vaso",
+        precoSublinhado: "De: R$ 235,90",
+        preco: "Por: R$ 195,90"
+    },
+    {
+        imagem: "../img/vasos_img/ceramica/vasos-ceramica-3.jpg",
+        produto: "Vaso Bege Cêramica",
+        precoSublinhado: "De: R$ 45,90",
+        preco: "Por: R$ 35,90"
+    },
+    {
+        imagem: "../img/vasos_img/ceramica/vasos-ceramica-4.jpg",
+        produto: "Vaso Cerâmica Redondo",
+        precoSublinhado: "De: R$ 85,90",
+        preco: "Por: R$ 53,90"
+    }
+]
+
+for(i = 0; i < ceramica.length; i++){
+    let divCeramica = document.createElement("div");
+    divCeramica.innerHTML = `
+        <img class = "img-plastico" src=${ceramica[i].imagem} alt="Produtos-plastico">
+        <p class = "text-plastico" >${ceramica[i].produto}</p>
+        <small><s class="text-plastico">${ceramica[i].precoSublinhado}</s></small>
+        <p class="text-plastico">${ceramica[i].preco}</p>
+        <p class="botao-produtos-plastico botao-adicionar">Adicionar ao Carrinho</p>
+    `
+    divCeramica.classList.add("div-plastico-produtos");
+    let divPaiCeramica = document.getElementById("div-pai-ceramica");
+    divPaiCeramica.appendChild(divCeramica);
+}
+
+//Inserção de Vasos Pedra
+const pedra = [
+    {
+        imagem: "../img/vasos_img/pedra/vasos-pedra-1.jpg",
+        produto: "Vasinhos Pedra Aqua",
+        precoSublinhado: "De: R$ 85,90",
+        preco: "Por: R$ 59,90"
+    },
+    {
+        imagem: "../img/vasos_img/pedra/vasos-pedra-2.jpg",
+        produto: "Decoração Vaso Pedras",
+        precoSublinhado: "De: R$ 85,90",
+        preco: "Por: R$ 65,90"
+    },
+    {
+        imagem: "../img/vasos_img/pedra/vasos-pedra-3.jpg",
+        produto: "Vaso Pedras Pequeno",
+        precoSublinhado: "De: R$ 45,90",
+        preco: "Por: R$ 35,90"
+    }
+]
+
+for(i = 0; i < pedra.length; i++){
+    let divPedra = document.createElement("div");
+    divPedra.innerHTML = `
+        <img class = "img-plastico" src=${pedra[i].imagem} alt="Produtos-plastico">
+        <p class = "text-plastico" >${pedra[i].produto}</p>
+        <small><s class="text-plastico">${pedra[i].precoSublinhado}</s></small>
+        <p class="text-plastico">${pedra[i].preco}</p>
+        <p class="botao-produtos-plastico botao-adicionar">Adicionar ao Carrinho</p>
+    `
+    divPedra.classList.add("div-plastico-produtos");
+    let divPaiPedra = document.getElementById("div-pai-pedra");
+    divPaiPedra.appendChild(divPedra);
+}
+
+//Adicionar ao Carrinho
+let quantidadeCarrinho = document.getElementById("quantidade-carrinho");
+
+let botaoAdicionar = document.getElementsByClassName("botao-adicionar");
+let contador = 0;
+for(i = 0; i < botaoAdicionar.length; i++){
+    botaoAdicionar[i].addEventListener("click", ()=>{
+        contador = contador + 1;
+        quantidadeCarrinho.innerText = contador;
+    })
+}

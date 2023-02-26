@@ -1,84 +1,119 @@
-//Capturando o Elemento botão produtos e o Elemento Div Produtos
-let botaoProdutos = document.getElementById("botao-produtos");
-let divProdutos = document.getElementById("div-produtos");
-
-divProdutos.addEventListener("mouseover", ()=>{
-    botaoProdutos.classList.remove("invisible");
-    botaoProdutos.classList.add("mostra-botao-produtos-index");
-})
-divProdutos.addEventListener("mouseout", ()=>{
-    botaoProdutos.classList.add("invisible");
-    botaoProdutos.classList.remove("mostra-botao-produtos-index");
-})
-
-//Capturando os itens do Carrinho
-let quantidadeCarrinho = document.getElementById("quantidade-carrinho");
-//Adiocionando o Valor de itens no Carrinho
-let contador = 0;
-botaoProdutos.addEventListener("click", ()=>{
-    contador = contador + 1;
-    quantidadeCarrinho.innerText = contador;
-})
-
-//Criando Produtos/Objetos para inserção na DivPai com DOM
-const arrayProdutos = [
-    {   
-        imagem: "../img/acessorios_img/completo.jpg",
-        produto: "Kit Completo",
+//Inserção de Ferramentas Luvas
+const luvas = [
+    {
+        imagem: "../img/acessorios_img/luvas/ferramentas-luvas-1.jpg",
+        produto: "Luva Anticorte Jardim",
         precoSublinhado: "De: R$ 15,90",
         preco: "Por: R$ 13,90"
     },
-    {   
-        imagem: "../img/acessorios_img/enxada.jpg",
-        produto: "Enxada",
-        precoSublinhado: "De: R$ 5,90",
-        preco: "Por: R$ 3,90"
+    {
+        imagem: "../img/acessorios_img/luvas/ferramentas-luvas-2.jpg",
+        produto: "Luva Jardinagem Garra",
+        precoSublinhado: "De: R$ 29,90",
+        preco: "Por: R$ 25,90"
     },
-    {   
-        imagem: "../img/acessorios_img/jogopequeno.jpg",
-        produto: "Jogo Pequeno",
-        precoSublinhado: "De: R$ 199,90",
-        preco: "Por: R$ 159,90"
-    },
-    {   
-        imagem: "../img/acessorios_img/rastelo.jpg",
-        produto: "Rastelo",
-        precoSublinhado: "De: R$ 209,90",
-        preco: "Por: R$ 189,90"
-    },
-    {   
-        imagem: "../img/acessorios_img/tesoura.jpg",
-        produto: "Tesoura",
-        precoSublinhado: "De: R$ 299,90",
-        preco: "Por: R$ 99,90"
+    {
+        imagem: "../img/acessorios_img/luvas/ferramentas-luvas-3.jpg",
+        produto: "Luva jardinagem em pol",
+        precoSublinhado: "De: R$ 17,90",
+        preco: "Por: R$ 14,90"
     }
-    // {   
-    //     imagem: "../img/vasos_img/vaso7.jpg",
-    //     produto: "Vaso de Parede",
-    //     precoSublinhado: "De: R$ 9,90",
-    //     preco: "Por: R$ 5,90"
-    // }
-    // {   
-    //     imagem: "../img/index_img/index-8.jpg",
-    //     produto: "Muda de Palmeira Areca",
-    //     precoSublinhado: "De: R$ 19,90",
-    //     preco: "Por: R$ 12,90"
-    // }
 ]
 
-//Criando o elemento Div Produtos com o DOM
-for(i = 0; i < arrayProdutos.length; i++){
-    let div = document.createElement("div");
-    div.innerHTML = `
-        <div id="div-produtos" class="produtos-index">
-            <img class="img-produtos-index" src=${arrayProdutos[i].imagem} alt="produto-1-index">
-            <p class="text-produtos">${arrayProdutos[i].produto}</p>
-            <small><s class="text-produtos">${arrayProdutos[i].precoSublinhado}</s></small>
-            <p class="text-produtos">${arrayProdutos[i].preco}</p>
-            <p id="botao-produtos" class="invisible">Adicionar ao Carrinho</p>
-        </div>
+for(i = 0; i < luvas.length ; i++){
+    let divLuvas = document.createElement("div");
+    divLuvas.innerHTML = `
+        <img class = "img-luvas" src=${luvas[i].imagem} alt="Produtos-luvas">
+        <p class = "text-luvas" >${luvas[i].produto}</p>
+        <small><s class="text-luvas">${luvas[i].precoSublinhado}</s></small>
+        <p class="text-luvas">${luvas[i].preco}</p>
+        <p class="botao-produtos-luvas botao-adicionar">Adicionar ao Carrinho</p>
     `
-    let divPai = document.getElementById("div-pai");
-    divPai.appendChild(div);
+    divLuvas.classList.add("div-luvas-produtos");
+    let divPaiLuvas = document.getElementById("div-pai-luvas");
+    divPaiLuvas.appendChild(divLuvas);
 }
 
+//Inserção de Ferramentas Pá
+const pa = [
+    {
+        imagem: "../img/acessorios_img/pa/ferramentas-pa-1.jpg",
+        produto: "Pazinha Larga De 260",
+        precoSublinhado: "De: R$ 15,90",
+        preco: "Por: R$ 13,90"
+    },
+    {
+        imagem: "../img/acessorios_img/pa/ferramentas-pa-2.jpg",
+        produto: "Pazinha para Jardinagem",
+        precoSublinhado: "De: R$ 19,90",
+        preco: "Por: R$ 15,90"
+    },
+    {
+        imagem: "../img/acessorios_img/pa/ferramentas-pa-3.jpg",
+        produto: "Pazinha Estreita",
+        precoSublinhado: "De: R$ 15,90",
+        preco: "Por: R$ 13,90"
+    }
+]
+
+for(i = 0; i < pa.length ; i++){
+    let divPa = document.createElement("div");
+    divPa.innerHTML = `
+        <img class = "img-pa" src=${pa[i].imagem} alt="Produtos-pa">
+        <p class = "text-pa" >${pa[i].produto}</p>
+        <small><s class="text-pa">${pa[i].precoSublinhado}</s></small>
+        <p class="text-pa">${pa[i].preco}</p>
+        <p class="botao-produtos-luvas botao-adicionar">Adicionar ao Carrinho</p>
+    `
+    divPa.classList.add("div-luvas-produtos");
+    let divPaiPa = document.getElementById("div-pai-pa");
+    divPaiPa.appendChild(divPa);
+}
+
+//Inserção de Ferramentas Tesouras
+const tesouras = [
+    {
+        imagem: "../img/acessorios_img/tesouras/ferramentas-tesoura-1.jpg",
+        produto: "Tesoura Poda Palisad",
+        precoSublinhado: "De: R$ 15,90",
+        preco: "Por: R$ 13,90"
+    },
+    {
+        imagem: "../img/acessorios_img/tesouras/ferramentas-tesoura-2.jpg",
+        produto: "Tesoura Poda Tramontina",
+        precoSublinhado: "De: R$ 19,90",
+        preco: "Por: R$ 15,90"
+    },
+    {
+        imagem: "../img/acessorios_img/tesouras/ferramentas-tesoura-3.jpg",
+        produto: "Tesoura para Cerca Viva",
+        precoSublinhado: "De: R$ 25,90",
+        preco: "Por: R$ 23,90"
+    }
+]
+
+for(i = 0; i < tesouras.length ; i++){
+    let divTesouras = document.createElement("div");
+    divTesouras.innerHTML = `
+        <img class = "img-tesouras" src=${tesouras[i].imagem} alt="Produtos-tesouras">
+        <p class = "text-tesouras" >${tesouras[i].produto}</p>
+        <small><s class="text-tesouras">${tesouras[i].precoSublinhado}</s></small>
+        <p class="text-tesouras">${tesouras[i].preco}</p>
+        <p class="botao-produtos-luvas botao-adicionar">Adicionar ao Carrinho</p>
+    `
+    divTesouras.classList.add("div-luvas-produtos");
+    let divPaiTesouras = document.getElementById("div-pai-tesouras");
+    divPaiTesouras.appendChild(divTesouras);
+}
+
+//Adicionar ao Carrinho
+let quantidadeCarrinho = document.getElementById("quantidade-carrinho");
+
+let botaoAdicionar = document.getElementsByClassName("botao-adicionar");
+let contador = 0;
+for(i = 0; i < botaoAdicionar.length; i++){
+    botaoAdicionar[i].addEventListener("click", ()=>{
+        contador = contador + 1;
+        quantidadeCarrinho.innerText = contador;
+    })
+}

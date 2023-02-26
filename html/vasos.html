@@ -7,6 +7,7 @@
     <link rel="icon" href="../img/icones_logos/logo.png">
     <title>Vasos - PlanTech</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/vasos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
@@ -46,7 +47,7 @@
                 <div>
                     <a class="hover" id="carrinho" href="carrinho.html">
                         <img class="icon-user-carrinho" src="../img/icones_logos/icon-carrinho.png" alt="icon-carrinho">
-                        <p>0</p>
+                        <p id="quantidade-carrinho">0</p>
                     </a>
                 </div>
             </div>        
@@ -57,22 +58,32 @@
                 <a href="vasos.html"><li class="hover nav-header" style="opacity: 0.7;
                     cursor: pointer;">Vasos</li></a>
                 <a href="sementes.html"><li class="hover nav-header">Sementes</li></a>
-                <a href="acessorios.html"><li class="hover nav-header">Ferramentas</li></a>
+                <a href="ferramentas.html"><li class="hover nav-header">Ferramentas</li></a>
             </ul>
         </nav>
     </header>
     <main>
-        <div>
-            <div id="div-pai" class="div-pai-produtos">
-                <div id="div-produtos" class="produtos-index">
-                    <img class="img-produtos-index" src="../img/vasos_img/vaso1.jpg" alt="Produtos">
-                    <p class="text-produtos">Vaso Branco </p>
-                    <small><s class="text-produtos">De: R$ 15,90</s></small>
-                    <p class="text-produtos">Por: R$ 43,90</p>
-                    <p id="botao-produtos" class="invisible">Adicionar ao Carrinho</p>
-                </div>
-            </div>    
-        </div>
+        <aside>
+            <ul id="pai-ul-vasos">
+                <a href="#h2-plastico"><li class="li-aside-vasos">Plástico</li></a>
+                <a href="#h2-ceramica"><li class="li-aside-vasos">Cerâmica</li></a>
+                <a href="#h2-pedra"><li class="li-aside-vasos">Pedra</li></a>
+            </ul>
+        </aside>
+        <div id="div-pai-vasos">
+            <h2 id="h2-plastico" class="h2-vasos">Plástico</h2>
+            <div id="div-pai-plastico">
+            
+            </div>
+            <h2 id="h2-ceramica" class="h2-vasos">Cerâmica</h2>
+            <div id="div-pai-ceramica">
+
+            </div>
+            <h2 id="h2-pedra" class="h2-vasos">Pedra</h2>
+            <div id="div-pai-pedra">
+                
+            </div>
+        </div>           
     </main>
     <footer>
         <div id="primeiro-rodape">

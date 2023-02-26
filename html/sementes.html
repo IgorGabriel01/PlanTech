@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/icones_logos/logo.png">
     <title>Sementes - PlanTech</title>
+    <link rel="stylesheet" href="../css/sementes.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +48,7 @@
                 <div>
                     <a class="hover" id="carrinho" href="carrinho.html">
                         <img class="icon-user-carrinho" src="../img/icones_logos/icon-carrinho.png" alt="icon-carrinho">
-                        <p>0</p>
+                        <p id="quantidade-carrinho">0</p>
                     </a>
                 </div>
             </div>        
@@ -58,22 +59,27 @@
                 <a href="vasos.html"><li class="hover nav-header">Vasos</li></a>
                 <a href="sementes.html"><li class="hover nav-header" style="opacity: 0.7;
                     cursor: pointer;">Sementes</li></a>
-                <a href="acessorios.html"><li class="hover nav-header">Ferramentas</li></a>
+                <a href="ferramentas.html"><li class="hover nav-header">Ferramentas</li></a>
             </ul>
         </nav>
     </header>
     <main>
-        <div>
-            <div id="div-pai" class="div-pai-produtos">
-                <div id="div-produtos" class="produtos-index">
-                    <img class="img-produtos-index" src="../img/sementes_img/abobora.jpg" alt="Produtos">
-                    <p class="text-produtos">Abóbora </p>
-                    <small><s class="text-produtos">De: R$ 15,90</s></small>
-                    <p class="text-produtos">Por: R$ 3,90</p>
-                    <p id="botao-produtos" class="invisible">Adicionar ao Carrinho</p>
-                </div>
-            </div>    
-        </div>
+        <aside>
+            <ul id="pai-ul">
+                <a href="#mono"><li class="li-aside">Monocotiledôneas</li></a>
+                <a href="#dico"><li class="li-aside">Dicotiledôneas</li></a>
+            </ul>
+        </aside>
+        <div id="div-pai-sementes">
+            <h2 class="h2-sementes" id="mono">Monocotiledôneas</h2>
+            <div id="div-pai-mono">
+                
+            </div>
+            <h2 class="h2-sementes" id="dico">Dicotiledôneas</h2>
+            <div id="div-pai-dico">
+                
+            </div>
+        </div>           
     </main>
     <footer>
         <div id="primeiro-rodape">

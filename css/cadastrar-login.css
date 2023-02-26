@@ -47,6 +47,10 @@ button{
     margin-top: 15px;
     margin-left: 77px;
 }
+#botao-voltar{
+    width: 45px;
+    height: 45px;
+}
 
 /*Estilos DinÃ¢micos*/
 .correto{
@@ -62,7 +66,12 @@ button{
     font-size: 10px;
     margin-left: 5px;
 }
-nav{
-    list-style: none;
-    margin-left: 20px;
+#mostrar-password-cadastrar:hover{
+    cursor: pointer;
+}
+#mostrar-password-login{
+    cursor: pointer;
+}
+#botao-voltar:hover{
+    cursor: pointer;
 }
